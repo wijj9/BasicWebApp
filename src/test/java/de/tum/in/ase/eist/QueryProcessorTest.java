@@ -17,9 +17,7 @@ class QueryProcessorTest {
 	@Test
 	void testKnowsAboutShakespeare() {
 		String actual = queryProcessor.process("Shakespeare");
-		if (!actual.contains("playwright")) {
-			fail("The QueryProcessor does not know about Shakespeare.");
-		}
+		assertEquals("shakespeare",actual);
 	}
 
 	@Test
@@ -28,6 +26,12 @@ class QueryProcessorTest {
 		if (!actual.contains("playwright")) {
 			fail("Your QueryProcessor should not be case sensitive.");
 		}
+	}
+
+	@Test
+	void answertheQuestion() {
+		String actual = queryProcessor.process("what is your name");
+		assertEquals("BigUnit",actual);
 	}
 
 }
