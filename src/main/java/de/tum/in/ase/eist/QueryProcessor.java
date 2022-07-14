@@ -15,11 +15,19 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.toLowerCase().contains("name")) {
            return "BigUnit";
-        } else if (query.contains("plus")) {
+        } else if (query.contains("what is ") && query.contains("plus")) {
             String[] a = query.split(" ");
             int r = Integer.parseInt(a[2]) + Integer.parseInt(a[4]);
-            return r+"";
-        } else {
+            return String.valueOf(r);
+        }
+        else if (query.contains("which of the following numbers is the largest:")) {
+            return "";
+        } else if (query.contains("multiplied")) {
+            String[] q = query.split(" ");
+            int result = Integer.parseInt(q[2]) * Integer.parseInt(q[5]);
+            return String.valueOf(result);
+        }
+        else {
             return "";
         }
     }
