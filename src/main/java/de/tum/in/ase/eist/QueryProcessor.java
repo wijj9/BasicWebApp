@@ -15,8 +15,10 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.toLowerCase().contains("name")) {
            return "BigUnit";
-        } else if (query.contains("what is your name")) {
-            return "BigUnit";
+        } else if (query.contains("plus")) {
+            String[] a = query.split(" ");
+            int r = Integer.parseInt(a[2]) + Integer.parseInt(a[4]);
+            return r+"";
         } else {
             return "";
         }

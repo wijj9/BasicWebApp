@@ -20,13 +20,6 @@ class QueryProcessorTest {
 		assertEquals("Shakespeare",actual);
 	}
 
-//	@Test
-//	void isNotCaseSensitive() {
-//		String actual = queryProcessor.process("shakespeare");
-//		if (!actual.contains("playwright")) {
-//			fail("Your QueryProcessor should not be case sensitive.");
-//		}
-//	}
 
 	@Test
 	void answertheQuestion() {
