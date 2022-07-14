@@ -9,16 +9,16 @@ class QueryProcessorTest {
 
 	private final QueryProcessor queryProcessor = new QueryProcessor();
 
-	@Test
-	void testEmptyStringIfCannotProcessQuery() {
-		assertEquals("", queryProcessor.process("test"));
-	}
-
-	@Test
-	void testKnowsAboutShakespeare() {
-		String actual = queryProcessor.process("Shakespeare");
-		assertEquals("Shakespeare",actual);
-	}
+//	@Test
+//	void testEmptyStringIfCannotProcessQuery() {
+//		assertEquals("", queryProcessor.process("test"));
+//	}
+//
+//	@Test
+//	void testKnowsAboutShakespeare() {
+//		String actual = queryProcessor.process("Shakespeare");
+//		assertEquals("Shakespeare",actual);
+//	}
 
 
 	@Test
