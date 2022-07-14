@@ -17,7 +17,7 @@ class QueryProcessorTest {
 	@Test
 	void testKnowsAboutShakespeare() {
 		String actual = queryProcessor.process("Shakespeare");
-		assertEquals("shakespeare",actual);
+		assertEquals("Shakespeare",actual);
 	}
 
 //	@Test
